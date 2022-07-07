@@ -1,0 +1,2 @@
+$(".comments-view").html("<%= escape_javascript(render partial: 'book_comments/comments_view', locals: {book: @book, book_comments: @book.book_comments}) %>");
+$(".comments-area").html("<%= escape_javascript(render partial: 'book_comments/comment', locals: {book: @comment.book, book_comment: @bookcomment}) %>");
