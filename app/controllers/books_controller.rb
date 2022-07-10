@@ -14,6 +14,14 @@ class BooksController < ApplicationController
     @book = Book.new
     @books = Book.all
     @user = current_user
+    @this_week_book = @books.created_this_week
+    @today_book = @books.created_today
+    @yesterday_book = @books.created_yesterday
+    @book_3 = @books.created_3
+    @book_4 = @books.created_4
+    @book_5 = @books.created_5
+    @book_6 = @books.created_6
+    @book_7 = @books.created_7
   end
 
   def create
